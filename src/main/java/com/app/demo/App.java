@@ -12,9 +12,6 @@ public class App {
 
     public static void main(String[] args) {
 
-//        SpringApplication.run(Main.class, args);
         ConfigurableApplicationContext applicationContext = SpringApplication.run(App.class, args);
-        UserService service = (UserService) applicationContext.getBean(IUserService.class);
-        service.startTest();
     }
 }
